@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/iview.css" />
+		<title>Category</title>
+	</head>
+
+	<body>
+		<div id="app">
+			{{ message }}
+		</div>
+		
+		<div id="app-1">
+			<p v-if="seen">See me</p>
+		</div>
+		
+		<div id="app-2">
+			<ol>
+				<li v-for="list in lists">
+					{{ list.list }}
+				</li>
+			</ol>
+		</div>
+		
+		<div id="app-4">
+		  <ol>
+			<li v-for="todo in todos">
+			  {{ todo.text }}
+			</li>
+		  </ol>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/iview.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/stomp.min.js" ></script>
+	<script type="text/javascript" src="js/hellow.js"></script>
+
+</html>

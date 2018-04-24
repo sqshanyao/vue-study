@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/iview.css" />
+		<title>Shili</title>
+	</head>
+
+	<body>
+		<div id="app">
+			{{ message }}
+		</div>
+		
+		<div id="mm">
+			<p>Using mustaches: {{ rawHtml }}</p>
+			<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+		</div>
+		
+		<div id="bb">
+			{{ but }}
+			<button v-bind:disabled="but" onclick="show()">Button</button>
+			<button disabled="diable" onclick="alert('1')">Butto1n</button>
+		</div>
+		
+		<div id="jsj-1">
+			<p>{{ message}}</p>
+			<p>{{reversedMessage1}}</p>
+			<p>"{{reversedMessage()}}"</p>
+		</div>
+		
+	</body>
+	
+	<script type="text/javascript" src="../js/core/vue.min.js"></script>
+	<script type="text/javascript" src="../js/core/iview.min.js"></script>
+	<script type="text/javascript" src="../js/core/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/core/stomp.min.js" ></script>
+	<script type="text/javascript" src="../js/hellow.js"></script>
+	<script type="text/javascript" src="../js/shili.js"></script>
+	<script type="text/javascript" src="../js/muban.js"></script>
+</html>	
